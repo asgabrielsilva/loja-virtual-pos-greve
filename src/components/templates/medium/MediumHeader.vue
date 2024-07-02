@@ -1,3 +1,17 @@
+<script setup>
+import Magnify from 'vue-material-design-icons/Magnify.vue';
+</script>
+
 <template>
-  <h2>Medium Header</h2>
+  <div class="icons">
+    <Magnify />
+  </div>
 </template>
+
+<style scoped>
+.icons {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+</style>
