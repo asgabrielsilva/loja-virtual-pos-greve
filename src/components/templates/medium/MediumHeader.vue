@@ -1,10 +1,9 @@
 <script setup>
-import Magnify from 'vue-material-design-icons/Magnify.vue';
 </script>
 
 <template>
   <div class="icons">
-    <Magnify />
+    <i class="mdi mdi-magnify" />
   </div>
 </template>
 

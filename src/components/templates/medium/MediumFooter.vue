@@ -1,7 +1,4 @@
 <script setup>
-import Facebook from 'vue-material-design-icons/Facebook.vue';
-import Twitter from 'vue-material-design-icons/Twitter.vue';
-import Instagram from 'vue-material-design-icons/Instagram.vue';
 </script>
 <template>
   <div class="links">
@@ -10,9 +7,9 @@ import Instagram from 'vue-material-design-icons/Instagram.vue';
     <RouterLink to="/">Privacy & Terms</RouterLink>
   </div>
   <div class="icons">
-    <Facebook size="30" />
-    <Twitter size="30" />
-    <Instagram size="30" />
+    <i class="mdi mdi-facebook" />
+    <i class="mdi mdi-twitter" />
+    <i class="mdi mdi-instagram" />
   </div>
 </template>
 <style scoped>
