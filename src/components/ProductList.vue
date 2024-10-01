@@ -28,6 +28,7 @@ onMounted(async () => {
 </script>
 
 <template>
+  
   <div class="product-list">
     <router-link :to="{ name: 'ProductAdd' }">
       <button class="icon ">
@@ -44,24 +45,25 @@ onMounted(async () => {
     >
       <div class="product-img-wrapper">
         <img :src="product.image?.url" alt="product.name" />
-        <i class="mdi mdi-heart-outline"/>
+        <i class="mdi mdi-heart-outline" />
       </div>
       <div class="product-title-price">
-        <p></p>
-        <p></p>
+        <p>{{ formatTitle(product.title) }}</p>
+        <p>{{ formatPrice(product.price * 1) }}</p>
       </div>
       <div class="product-description-stars">
-        <p></p>
+        <p>{{ formatDescription(product.description) }}</p>
         <div class="stars">
-          <i class="mdi mdi-star"/>
-          <i class="mdi mdi-star"/>
-          <i class="mdi mdi-star"/>
-          <i class="mdi mdi-star"/>
-          <i class="mdi mdi-star"/>
+          <i class="mdi mdi-star" />
+          <i class="mdi mdi-star" />
+          <i class="mdi mdi-star" />
+          <i class="mdi mdi-star" />
+          <i class="mdi mdi-star" />
         </div>
       </div>
     </div>
   </div>
+  
 </template>
 
 <style scoped>
